@@ -1,0 +1,149 @@
+/* Default styles */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+  padding-right: 15%;
+  padding-left: 15%;
+  font-size: 150%;
+}
+
+#skills {
+  font-size: 36px;
+}
+
+header,
+.habilidades,
+footer {
+  height: 100%;
+  width: 100%;
+}
+
+#about h1 {
+  font-size: 100px;
+}
+
+#about p {
+  width: 50%;
+  height: auto;
+  background-color: rgba(87, 84, 84, 0.362);
+  color: rgb(255, 255, 255);
+  filter: brightness(1);
+}
+
+#about {
+  padding-top: 160px;
+
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.icons {
+  text-align: center;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.socialMediaSpan {
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0px;
+  transition: all .5s ease 0s;
+}
+
+.btn a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.btn {
+  width: auto;
+  margin: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  color: rgb(78, 0, 166) bold;
+  transition: 1s ease-in-out;
+  border-radius: 40px;
+  font-size: 15px;
+  justify-content: space-around;
+  text-decoration: none;
+  background-color: rgb(7, 88, 160);
+  align-items: center;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 400px) {
+  p {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  blockquote {
+    margin: 2em 5%;
+  }
+
+  #about {
+    padding-top: 80px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  #contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .socialMediaSpan {
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    width: auto;
+    /* Reduce width for smaller screens */
+    height: auto;
+    /* Reduce height for smaller screens */
+    font-size: auto;
+    /* Reduce font size for better fit */
+    text-decoration: none;
+  }
+}
