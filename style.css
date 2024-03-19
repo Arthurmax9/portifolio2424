@@ -33,9 +33,9 @@ footer {
 }
 
 #about p {
-  width: 50%;
+  width: 60%;
   height: auto;
-  background-color: rgba(87, 84, 84, 0.362);
+  background-color: rgba(9, 0, 59, 0.614);
   color: rgb(255, 255, 255);
   filter: brightness(1);
 }
@@ -145,5 +145,10 @@ footer {
     font-size: auto;
     /* Reduce font size for better fit */
     text-decoration: none;
+  }
+  #about p{ 
+    display: flex;
+    width: 80%;
+
   }
 }
