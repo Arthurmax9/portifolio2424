@@ -5,13 +5,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   margin: 0;
   flex-direction: column;
   background-color: #000000;
 }
 
 .galeria h1 {
-  margin-top: 100px;
+  margin-top: 30px;
   color: #ccc;
   animation: color-change 2s infinite linear;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -46,17 +47,23 @@
 .thumbnails {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  width: 80%;
+  margin-top: 10px;
+
+  width: 50%;
   max-width: 1200px;
-  margin-bottom: 30px;
+  
+  display: flex;
+  justify-content: space-between;
 }
 
 .thumbnails img {
+
   width: 100px;
   height: 75px;
   object-fit: cover;
   cursor: pointer;
+  display: flex;
+  justify-content: space-around;
 }
 
 .thumbnails img.selected {
